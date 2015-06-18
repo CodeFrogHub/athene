@@ -3,6 +3,9 @@
   "version": "0.0.3",
   "description": "web application framework",
   "main": "index.js",
+  "bin": {
+    "athene": "./bin/athene"
+  },
   "preferGlobal": true,
   "scripts": {
     "test": "./node_modules/.bin/mocha",
@@ -27,5 +30,8 @@
     "istanbul": "^0.3.15",
     "mocha": "^2.2.5",
     "should": "^7.0.1"
+  },
+  "dependencies": {
+    "athene-cli": "~0.0.1"
   }
 }

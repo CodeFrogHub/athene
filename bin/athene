@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
 // Athene CLI
+// We only have to require 'athene-cli' module and call it
+require('athene-cli')();
