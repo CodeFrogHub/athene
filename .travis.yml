@@ -1,1 +1,8 @@
 language: node_js
+before_install:
+- npm install -g codeclimate-test-reporter
+after_script:
+- npm run coverage
+- codeclimate < coverage/lcov.info
+env:
+- NODE_ENV=test CODECLIMATE_REPO_TOKEN=fc8f093a0bcd7881af44e72d49289068f429efe7de10782640a3cf01091fd80d
