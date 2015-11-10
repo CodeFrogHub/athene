@@ -1,7 +1,11 @@
 var should = require('should');
+var Athene = require('..');
 describe('Athene', function() {
 	it('should be able to require', function() {
-		athene = require('..');
-		should.exist(athene);
+		should.exist(Athene);
+	});
+
+	it('should be able to instantiate an athene app', function() {
+		var application = new Athene();
 	});
 });

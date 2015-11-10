@@ -2,7 +2,7 @@
   "name": "athene",
   "version": "0.0.3",
   "description": "web application framework",
-  "main": "index.js",
+  "main": "lib/athene.js",
   "bin": {
     "athene": "./bin/athene"
   },
